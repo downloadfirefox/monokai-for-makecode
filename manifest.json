@@ -1,0 +1,20 @@
+{
+ "manifest_version": 3,
+ "name": "Monokai for MakeCode",
+ "version": "0.0.1",
+ "description": "Monokai Theme for MakeCode editor for MicroBit.",
+ "host_permissions": [
+       "*://python.microbit.org/*"
+ ],
+ "permissions": [
+       "activeTab",
+       "storage",
+       "downloads"
+ ],
+ "content_scripts": [
+   {
+     "matches": ["*://python.microbit.org/*"],
+     "css": ["background.css"]
+   }
+ ]
+}
